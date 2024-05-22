@@ -25,6 +25,7 @@ def main():
         
         asciiArt = textToAscii(userText)
         print(asciiArt)
+        print('\n')
 
         if (asciiArt):
             continue
