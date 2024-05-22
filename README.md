@@ -7,6 +7,7 @@ To get started, navigate to ```ascii-art-converter``` in your terminal.
 Once you're there, type the following command:
   
   Windows: ```python main.py```
+  
   MacOS: ```python3 main.py```
 
 Enter whatever text you want and watch the magic happen!
