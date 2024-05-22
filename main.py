@@ -15,7 +15,7 @@ def main():
         print('\n')
 
         if userText == 'QUIT':
-            print('Thanks for using the B33FWARE ASCII art generator!')
+            print('Thanks for using the B33FWare ASCII Text2Art Converter!')
             sys.exit()
 
         if not (userText):
