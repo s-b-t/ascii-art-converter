@@ -6,7 +6,7 @@ def textToAscii(text):
 
 def main():
     
-    print('Welcome to the B33FWARE ASCII Art Generator!')
+    print('Welcome to the B33FWARE ASCII Text2Art Converter!')
     print('Author: Steven Blake Tobias')
     print('\n')
 
