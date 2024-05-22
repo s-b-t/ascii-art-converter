@@ -5,9 +5,11 @@ def textToAscii(text):
     return asciiArt
 
 def main():
+    
     print('Welcome to the B33FWARE ASCII Art Generator!')
     print('Author: Steven Blake Tobias')
-    print('\n\n')
+    print('\n')
+
     while True:
         userText = input('Enter or paste the text you would like to convert to ASCII art (to stop, type QUIT): ')
         print('\n')
