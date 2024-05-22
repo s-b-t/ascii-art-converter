@@ -9,6 +9,8 @@ def main():
     print('Welcome to the B33FWare ASCII Text2Art Converter.')
     print('Author: Steven Blake Tobias')
     print('\n')
+    input('Press [Enter] or [Return] to continue...')
+    print('\n')
 
     while True:
         userText = input('Enter or paste the text you would like to convert to ASCII art (to Quit, type QUIT): ')
