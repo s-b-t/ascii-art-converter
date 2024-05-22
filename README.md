@@ -1,4 +1,4 @@
-### Welcome to the B33FWARE ASCII Text2Art Converter!
+### Welcome to the B33FWare ASCII Text2Art Converter!
 
 This little program is meant showcase how creative you can be right in your terminal. It converts any text you want into ASCII art. Terminal programs are fun!
 

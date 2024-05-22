@@ -6,12 +6,12 @@ def textToAscii(text):
 
 def main():
     
-    print('Welcome to the B33FWARE ASCII Text2Art Converter!')
+    print('Welcome to the B33FWare ASCII Text2Art Converter.')
     print('Author: Steven Blake Tobias')
     print('\n')
 
     while True:
-        userText = input('Enter or paste the text you would like to convert to ASCII art (to stop, type QUIT): ')
+        userText = input('Enter or paste the text you would like to convert to ASCII art (to Quit, type QUIT): ')
         print('\n')
 
         if userText == 'QUIT':
