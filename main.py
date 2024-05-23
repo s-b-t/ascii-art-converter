@@ -14,6 +14,7 @@ def italicText(text):
     return "\033[3m" + text + "\033[0m"
 
 def main():
+    # preferredFonts = [], Pseudo code: This will give the user a random font from a predetermined font list only out of the legible fonts that I select for the program to run off of
     # Greets user with header
     print()
     print("Welcome to the B33FWare ASCII Text2Art Converter.")
