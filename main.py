@@ -61,7 +61,7 @@ def main():
                     print()
             if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
                 fontToUse = currentFont
-            # If user says Yes, program keeps the same font, otherwise chooses a font at random from pyfiglet
+            # If user says Yes (in any type-case), program keeps the same font, otherwise chooses a font at random from pyfiglet
             else: 
                 fontToUse = random.choice(fonts)
         else:
