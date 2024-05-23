@@ -1,6 +1,6 @@
 import pyfiglet, sys, random
 
-# Defines textToAscii function by formatting incoming data to match text and font/ allows asciiArt to be used
+# Defines textToAscii function by formatting incoming data to match text and font/allows asciiArt to be used
 def textToAscii(text, font):
     asciiArt = pyfiglet.figlet_format(text, font = font)
     return asciiArt
