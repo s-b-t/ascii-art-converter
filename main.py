@@ -10,6 +10,7 @@ def main():
     
     print('Welcome to the B33FWare ASCII Text2Art Converter.')
     print('Author: Steven Blake Tobias')
+    print('More info at www.github.com/s-b-t')
     print()
     input('Press [Enter] or [Return] to continue...')
     print()
