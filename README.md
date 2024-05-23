@@ -10,10 +10,10 @@ This little program is meant showcase how creative you can be right in your term
 
 To get started, navigate to ```ascii-art-converter``` in your terminal (assuming you've already imported the code and named your folder ```ascii-art-converter```).
 
-Once you're there, type the following command:
+Once you're there, type and enter the following command:
   
   Windows: ```python main.py```
   
   MacOS: ```python3 main.py```
 
-Enter whatever text you want and watch the magic happen!
+Once you've received the greeting message/header, enter whatever text you want and watch the magic happen!
