@@ -14,13 +14,16 @@ def italicText(text):
     return "\033[3m" + text + "\033[0m"
 
 def main():
-    # preferredFonts = [], Pseudo code: This will give the user a random font from a predetermined font list only out of the legible fonts that I select for the program to run off of
+    # preferredFonts = [] 
+    # Pseudo code: This will give the user a random font from a predetermined font list only out of the legible fonts that I select for the program to run off of
+    
     # Greets user with header
     print()
     print("Welcome to the B33FWare ASCII Text2Art Converter.")
     print("Author: Steven Blake Tobias")
     print("More info at" + boldText(" www.github.com/s-b-t"))
     print()
+    
     # Allows user to continue with the program as intended
     input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue...')
     print()
@@ -31,7 +34,8 @@ def main():
     
     # Validates and keeps asking user to enter something if no valid entry exists
     while True:
-        # Allows user to enter any text they wish, or QUIT
+        
+        # Allows user to enter any text they wish, or QUIT out of the program
         userText = input('Enter or paste the text you would like to convert to ASCII art' + boldText(" (to Quit, type QUIT): "))
         print()
 
@@ -48,21 +52,28 @@ def main():
         
         # As long as the currentFont is active, sets a condition to give the user more options on changing the font style or keeping the same font style
         if currentFont:
+            
             # Keeps asking user to enter valid input of Y/N
             while True:
-                # Gives user the option to continue with the same font
+                
+                # Gives user the option to continue with the same font or not
                 useSameFont = input("Do you want to continue with the same font?" + boldText(" (Y/N): "))
                 print()
+                
                 # If answer is Yes or No (in any type-case), continues the program as intended
                 if useSameFont.lower() in ['y', 'n', 'yes', 'no', 'Y', 'N', 'Yes', 'No', 'YES', 'NO' ]:
                     break
                 else:
+                    
                     # Validates to user that they didn't choose an answer if no input was entered
                     print("You didn't choose an answer!" + boldText(' (Y/N): '))
                     print()
+            
             if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
                 fontToUse = currentFont
+            
             # If user says Yes (in any type-case), program keeps the same font, otherwise chooses a font at random from pyfiglet
+            
             else: 
                 fontToUse = random.choice(fonts)
         else:
