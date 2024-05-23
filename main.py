@@ -5,15 +5,15 @@ def textToAscii(text, font):
     return asciiArt
 
 def main():
-    fonts = pyfiglet.FigletFont.getFonts()
-    currentFont = None
-    
     print('Welcome to the B33FWare ASCII Text2Art Converter.')
     print('Author: Steven Blake Tobias')
     print('More info at www.github.com/s-b-t')
     print()
     input('Press [Enter] or [Return] to continue...')
     print()
+
+    fonts = pyfiglet.FigletFont.getFonts()
+    currentFont = None
     
     while True:
         userText = input('Enter or paste the text you would like to convert to ASCII art (to Quit, type QUIT): ')
