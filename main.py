@@ -15,6 +15,7 @@ def italicText(text):
 
 def main():
     # Greets user with header
+    print()
     print("Welcome to the B33FWare ASCII Text2Art Converter.")
     print("Author: Steven Blake Tobias")
     print("More info at" + boldText(" www.github.com/s-b-t"))
