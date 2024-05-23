@@ -35,12 +35,12 @@ def main():
             while True:
                 useSameFont = input("Do you want to continue with the same font?" + boldText(" (Y/N): "))
                 print()
-                if useSameFont.lower().upper() in ['y', 'n', 'yes', 'no', 'Y', 'N', 'Yes', 'No', 'YES', 'NO' ]:
+                if useSameFont.lower() in ['y', 'n', 'yes', 'no', 'Y', 'N', 'Yes', 'No', 'YES', 'NO' ]:
                     break
                 else: 
                     print("You didn't choose an answer!" + boldText(' (Y/N): '))
                     print()
-            if useSameFont.lower().upper() in ['y', 'yes', 'Y', 'Yes', 'YES']:
+            if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
                 fontToUse = currentFont
             else: 
                 fontToUse = random.choice(fonts)
