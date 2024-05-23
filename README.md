@@ -8,7 +8,7 @@ If you want to check out more information about ```pyfiglet```, visit https://py
 
 This little program is meant showcase how creative you can be right in your terminal. It converts any text you want into ASCII art. Terminal programs are fun!
 
-To get started, navigate to ```ascii-art-converter``` in your terminal.
+To get started, navigate to ```ascii-art-converter``` in your terminal (assuming you've already imported the code and named your folder ```ascii-art-converter```).
 
 Once you're there, type the following command:
   
