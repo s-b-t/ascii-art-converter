@@ -46,7 +46,8 @@ def main():
 
         asciiArt = textToAscii(userText, fontToUse)
         print(asciiArt)
-        print(f'Current Font: {fontToUse}')
+        # Boldens 'Current Font:' using ANSI escape characters
+        print(f'\033[1mCurrent Font:\033[0m {fontToUse}')
         print()
 
         currentFont = fontToUse
