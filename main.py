@@ -40,7 +40,7 @@ def main():
             print()
             continue
         
-        # If user wishes to leave the program, prints a Thank You message
+        # If user wishes to leave the program, prints a Thank You message and exits the program
         if userText == 'QUIT':
             print('Thank you for using the B33FWare ASCII Text2Art Converter.')
             sys.exit()
