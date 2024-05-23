@@ -13,7 +13,7 @@ def main():
     print('\n')
     input('Press [Enter] or [Return] to continue...')
     print('\n')
-
+    
     while True:
         userText = input('Enter or paste the text you would like to convert to ASCII art (to Quit, type QUIT): ')
         print('\n')
