@@ -42,7 +42,7 @@ def main():
         
         # If user wishes to leave the program, prints a Thank You message
         if userText == 'QUIT':
-            print('Thanks for using the B33FWare ASCII Text2Art Converter.')
+            print('Thank you for using the B33FWare ASCII Text2Art Converter.')
             sys.exit()
         
         # As long as the currentFont is active, sets a condition to give the user more options on changing the font style or keeping the same font style
