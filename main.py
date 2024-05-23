@@ -46,6 +46,7 @@ def main():
 
         asciiArt = textToAscii(userText, fontToUse)
         print(asciiArt)
+        print(f'Current Font: {fontToUse}')
         print()
 
         currentFont = fontToUse
