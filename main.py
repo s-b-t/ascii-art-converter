@@ -4,8 +4,13 @@ def textToAscii(text, font):
     asciiArt = pyfiglet.figlet_format(text, font = font)
     return asciiArt
 
+# Boldens text using ANSI escape characters when function is called
 def boldText(text):
     return "\033[1m" + text + "\033[0m"
+
+# Italicizes text using ANSI escape characters when function is called
+def italicText(text):
+    return "\033[3m" + text + "\033[0m"
 
 def main():
     print("Welcome to the B33FWare ASCII Text2Art Converter.")
@@ -49,7 +54,7 @@ def main():
 
         asciiArt = textToAscii(userText, fontToUse)
         print(asciiArt)
-        print(boldText("Current Font: ") + f'{fontToUse}')
+        print(boldText("Current Font: ") + italicText(f'{fontToUse}'))
         print()
 
         currentFont = fontToUse
