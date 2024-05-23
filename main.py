@@ -34,7 +34,7 @@ def main():
             if not (useSameFont):
                 input('Please answer (Y/N): ')
                 print('\n')
-            # Line 35-42 there's another bug. When user says 'y' the output does not keep the font the same and randomizes instead. Potential problem/placement with while loop. Also need more validations just like note on Line 34.
+            # Line 35-42 there's another bug. When user inputs 'y' the output does not keep the font the same and randomizes instead. Potential problem/placement with while loop. Also need more validations just like note on Line 34.
             if useSameFont.lower() == 'y':
                 fontToUse = currentFont
             else: 
