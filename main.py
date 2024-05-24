@@ -79,6 +79,8 @@ def main():
         terminalWidth = os.get_terminal_size().columns
 
         # Takes the ASCII art, centers each line within the terminal width, and prints the resulting centered ASCII art to the terminal
+        # print("\n\n")
+        # print(predeterminedFonts)
         print("\n\n")
         print("\n".join([line.center(terminalWidth) for line in asciiArt.splitlines()]))
         print("\n\n")
