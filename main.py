@@ -40,11 +40,13 @@ def main():
             print()
             continue
         
+        # Allows user to quit out of the program. If user quits, Thank You message displays and exits the program
         if userText == 'QUIT':
             print("Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
             print()
             sys.exit()
         
+        # If currentFont is active and while that is true, the program gives user the option to use the same font or not
         if currentFont:
             while True:
                 # Gives user the option to continue with the same font or not
@@ -59,10 +61,11 @@ def main():
                     print("You didn't choose an answer!" + boldText(' (Y/N)') + ":")
                     print()
             
+            # Accepts any type-case 'Yes' answer to be recorded and keeps the same font, otherwise randomly selects font if Yes is not the answer
             if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
                 fontToUse = currentFont
             else:
-                # Randomly selects a font from predeterminedFonts excluding the last font used
+                # Randomly selects a font from predeterminedFonts excluding the last font used if user answer is 'No' or anything but 'Yes'
                 predeterminedFontsExcludingLast = [font for font in predeterminedFonts if font != lastFontUsed]
                 fontToUse = random.choice(predeterminedFontsExcludingLast)
         else:
