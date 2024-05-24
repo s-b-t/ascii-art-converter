@@ -42,6 +42,7 @@ def main():
         
         if userText == 'QUIT':
             print("Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
+            print()
             sys.exit()
         
         if currentFont:
