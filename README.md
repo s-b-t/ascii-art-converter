@@ -1,10 +1,10 @@
 ### Welcome to the B33FWare ASCII Text2Art Converter!
 
-*Please Note: This program is in its BETA/WIP stage*
+*Please Note: This program is in its BETA/WIP stage.*
 
-```pyfiglet``` is used to pull in the different styles of fonts
+```pyfiglet``` is used to pull in the different styles of fonts.
 
-If you want to check out more information about ```pyfiglet```, visit https://pypi.org/project/pyfiglet/
+If you want to check out more information about ```pyfiglet```, visit https://pypi.org/project/pyfiglet/.
 
 This program is meant showcase how creative you can be right in your terminal. It converts any text you want into ASCII art. Terminal programs are fun!
 
