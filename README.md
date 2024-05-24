@@ -6,7 +6,7 @@
 
 If you want to check out more information about ```pyfiglet```, visit https://pypi.org/project/pyfiglet/
 
-This little program is meant showcase how creative you can be right in your terminal. It converts any text you want into ASCII art. Terminal programs are fun!
+This program is meant showcase how creative you can be right in your terminal. It converts any text you want into ASCII art. Terminal programs are fun!
 
 I hand-picked the coolest and most legible fonts from ```pyfiglet``` as there are more than a few fonts in the library that may not be desirable to the eye. The program uses ```predeterminedFontsExcludingLast = [font for font in predeterminedFonts if font != lastFontUsed]``` and ```fontToUse = random.choice(predeterminedFontsExcludingLast)``` to determine a random font out of the hand-picked list.
 
