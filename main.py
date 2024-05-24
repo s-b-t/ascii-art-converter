@@ -18,7 +18,7 @@ def main():
     
     # Greets user with header
     print()
-    print("Welcome to the B33FWare ASCII Text2Art Converter.")
+    print("Welcome to the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
     print("Author: Steven Blake Tobias")
     print("More info at " + boldText('www.github.com/s-b-t'))
     print()
@@ -32,7 +32,7 @@ def main():
     
     while True:
         # Allows user to enter any text they wish, or QUIT out of the program
-        userText = input('Enter or paste the text you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT): '))
+        userText = input('Enter or paste the text you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT)') + ": ")
         print()
 
         if not userText:
@@ -41,13 +41,13 @@ def main():
             continue
         
         if userText == 'QUIT':
-            print('Thank you for using the B33FWare ASCII Text2Art Converter.')
+            print("Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
             sys.exit()
         
         if currentFont:
             while True:
                 # Gives user the option to continue with the same font or not
-                useSameFont = input("Do you want to continue with the same font?" + boldText(" (Y/N): "))
+                useSameFont = input("Do you want to continue with the same font?" + boldText(" (Y/N)") + ": ")
                 print()
                 
                 # If answer is Yes or No (in any type-case), continues the program as intended
@@ -55,7 +55,7 @@ def main():
                     break
                 else:
                     # Validates to user that they didn't choose an answer if no input was entered
-                    print("You didn't choose an answer!" + boldText(' (Y/N): '))
+                    print("You didn't choose an answer!" + boldText(' (Y/N)') + ":")
                     print()
             
             if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
