@@ -14,7 +14,7 @@ def italicText(text):
 
 def main():
     # Defines the predetermined list of fonts
-    predeterminedFonts = ["block", "banner", "starwars", "slant", "doh", "bubble", "4max", "nancyj-improved", "c_ascii_", "ansi_regular", "cola", "f15_____", "georgia11", "amc_neko", "italics_", "relief", "nscript", "small_shadow", "flipped", "line_blocks", "cli8x8", "relief2", "js_bracket_letters", "colossal", "script", "gothic__", "ansi_shadow", "double", "clr8x10", "xbritebi", "univers", "isometric1", "red_phoenix", "amc_untitled", "cybermedium", "chunky", "broadway", "xsansb", "demo_m__", "js_cursive", "wavy", "ascii_new_roman", "italic", "small_slant", "fourtops", "pepper", "script__", "old_banner", "sub-zero", "xttyb", "binary", "crazy", "rectangles", "linux", "xbrite", "ttyb", "shadow", "bell", "calgphy2", "charact6", "smshadow", "banner3-d", "britei", "big_money-nw", "caligraphy", "glenyn", "thorned", "npn_____", "speed", "drpepper", "xsbookb", "threepoint", "doom", "fire_font-s", "patorjk's_cheese", "char2___", "banner4", "utopiabi", "heart_left", "pyramid", "mini", "dotmatrix", "3-d", "standard", "patorjk-hex", "sblood", "rammstein", "braced", "os2", "t__of_ap", "marquee", "fire_font-k", "filter", "modular", "jazmine", "peaks"]
+    handPickedFonts = ["block", "banner", "starwars", "slant", "doh", "bubble", "4max", "nancyj-improved", "c_ascii_", "ansi_regular", "cola", "f15_____", "georgia11", "amc_neko", "italics_", "relief", "nscript", "small_shadow", "flipped", "line_blocks", "cli8x8", "relief2", "js_bracket_letters", "colossal", "script", "gothic__", "ansi_shadow", "double", "clr8x10", "xbritebi", "univers", "isometric1", "red_phoenix", "amc_untitled", "cybermedium", "chunky", "broadway", "xsansb", "demo_m__", "js_cursive", "wavy", "ascii_new_roman", "italic", "small_slant", "fourtops", "pepper", "script__", "old_banner", "sub-zero", "xttyb", "binary", "crazy", "rectangles", "linux", "xbrite", "ttyb", "shadow", "bell", "calgphy2", "charact6", "smshadow", "banner3-d", "britei", "big_money-nw", "caligraphy", "glenyn", "thorned", "npn_____", "speed", "drpepper", "xsbookb", "threepoint", "doom", "fire_font-s", "patorjk's_cheese", "char2___", "banner4", "utopiabi", "heart_left", "pyramid", "mini", "dotmatrix", "3-d", "standard", "patorjk-hex", "sblood", "rammstein", "braced", "os2", "t__of_ap", "marquee", "fire_font-k", "filter", "modular", "jazmine", "peaks"]
     
     # Greets user with header
     print()
@@ -66,11 +66,11 @@ def main():
             if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
                 fontToUse = currentFont
             else:
-                # Randomly selects a font from predeterminedFonts excluding the last font used if user answer is 'No' or anything but 'Yes'
-                predeterminedFontsExcludingLast = [font for font in predeterminedFonts if font != lastFontUsed]
-                fontToUse = random.choice(predeterminedFontsExcludingLast)
+                # Randomly selects a font from handPickedFonts excluding the last font used if user answer is 'No' or anything but 'Yes'
+                handPickedFontsOmitLast = [font for font in handPickedFonts if font != lastFontUsed]
+                fontToUse = random.choice(handPickedFontsOmitLast)
         else:
-            fontToUse = random.choice(predeterminedFonts)
+            fontToUse = random.choice(handPickedFonts)
 
         # Takes the text entered by the user along with the chosen font, and stores it to generate the corresponding art into asciiArt
         asciiArt = textToAscii(userText, fontToUse)
@@ -80,7 +80,7 @@ def main():
 
         # Takes the ASCII art, centers each line within the terminal width, and prints the resulting centered ASCII art to the terminal
         # print("\n\n")
-        # print(predeterminedFonts)
+        # print(handPickedFonts)
         print("\n\n")
         print("\n".join([line.center(terminalWidth) for line in asciiArt.splitlines()]))
         print("\n\n")
