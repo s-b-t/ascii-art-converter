@@ -1,4 +1,4 @@
-import pyfiglet, sys, random
+import pyfiglet, sys, random, os
 
 def textToAscii(text, font):
     asciiArt = pyfiglet.figlet_format(text, font = font)
@@ -14,12 +14,13 @@ def italicText(text):
 
 def main():
     # Defines the predetermined list of fonts
-    predeterminedFonts = ["block", "banner", "starwars", "slant", "doh", "bubble", "4max", "nancyj-improved", "c_ascii_", "ansi_regular", "cola", "f15_____", "georgia11", "amc_neko", "italics_", "relief", "nscript", "small_shadow", "flipped", "line_blocks", "cli8x8", "relief2", "js_bracket_letters", "colossal", "script", "gothic__", "ansi_shadow", "double", "clr8x10", "xbritebi", "univers", "isometric1", "red_phoenix", "amc_untitled", "cybermedium", "chunky", "broadway", "xsansb", "demo_m__", "js_cursive", "wavy", "ascii_new_roman", "italic", "small_slant", "fourtops", "pepper", "script__", "old_banner", "sub-zero", "xttyb", "binary", "crazy", "rectangles", "linux", "xbrite", "ttyb", "shadow", "bell", "calgphy2", "charact6", "smshadow", "banner3-d", "britei", "big_money-nw", "caligraphy", "glenyn", "thorned", "npn_____", "speed", "drpepper", "xsbookb", "threepoint", "doom", "fire_font-s", "patorjk's_cheese", "char2___", "banner4", "utopiabi", "heart_left", "pyramid", "mini", "dotmatrix", "3-d", "standard", "asci___", "patorjk-hex", "sblood", "rammstein", "braced", "os2", "t__of_ap", "marquee", "fire_font-k", "filter", "modular", "jazmine", "peaks"]
+    predeterminedFonts = ["block", "banner", "starwars", "slant", "doh", "bubble", "4max", "nancyj-improved", "c_ascii_", "ansi_regular", "cola", "f15_____", "georgia11", "amc_neko", "italics_", "relief", "nscript", "small_shadow", "flipped", "line_blocks", "cli8x8", "relief2", "js_bracket_letters", "colossal", "script", "gothic__", "ansi_shadow", "double", "clr8x10", "xbritebi", "univers", "isometric1", "red_phoenix", "amc_untitled", "cybermedium", "chunky", "broadway", "xsansb", "demo_m__", "js_cursive", "wavy", "ascii_new_roman", "italic", "small_slant", "fourtops", "pepper", "script__", "old_banner", "sub-zero", "xttyb", "binary", "crazy", "rectangles", "linux", "xbrite", "ttyb", "shadow", "bell", "calgphy2", "charact6", "smshadow", "banner3-d", "britei", "big_money-nw", "caligraphy", "glenyn", "thorned", "npn_____", "speed", "drpepper", "xsbookb", "threepoint", "doom", "fire_font-s", "patorjk's_cheese", "char2___", "banner4", "utopiabi", "heart_left", "pyramid", "mini", "dotmatrix", "3-d", "standard", "patorjk-hex", "sblood", "rammstein", "braced", "os2", "t__of_ap", "marquee", "fire_font-k", "filter", "modular", "jazmine", "peaks"]
     
     # Greets user with header
     print()
     print("Welcome to the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
     print("Author: Steven Blake Tobias")
+    print(boldText("PSSST! ") + "This program runs best on full screen.")
     print("More info at " + boldText('www.github.com/s-b-t'))
     print()
     
@@ -71,11 +72,22 @@ def main():
         else:
             fontToUse = random.choice(predeterminedFonts)
 
-        # Prints the ASCII art to terminal and names the Current Font
+        # Takes the text entered by the user along with the chosen font, and stores it to generate the corresponding art into asciiArt
         asciiArt = textToAscii(userText, fontToUse)
-        print(asciiArt)
-        print(boldText("Current Font: ") + italicText(f'{fontToUse}'))
-        print()
+
+        # Gets terminal width
+        terminalWidth = os.get_terminal_size().columns
+
+        # Takes the ASCII art, centers each line within the terminal width, and prints the resulting centered ASCII art to the terminal
+        print("\n\n")
+        print("\n".join([line.center(terminalWidth) for line in asciiArt.splitlines()]))
+        print("\n\n")
+
+        # Centers 'Current Font: fontToUse' statement to terminal underneath the centered ASCII art
+        currentFontText = boldText("Current Font: ") + italicText(f'{fontToUse}')
+        padding = (terminalWidth - len(currentFontText)) // 2
+        print(" " * padding + currentFontText)
+        print("\n\n")
 
         currentFont = fontToUse
         lastFontUsed = fontToUse
