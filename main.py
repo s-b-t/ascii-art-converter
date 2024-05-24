@@ -61,7 +61,7 @@ def main():
             if useSameFont.lower() in ['y', 'yes', 'Y', 'Yes', 'YES']:
                 fontToUse = currentFont
             else:
-                # Randomly select a font from predeterminedFonts excluding the last font used
+                # Randomly selects a font from predeterminedFonts excluding the last font used
                 predeterminedFontsExcludingLast = [font for font in predeterminedFonts if font != lastFontUsed]
                 fontToUse = random.choice(predeterminedFontsExcludingLast)
         else:
