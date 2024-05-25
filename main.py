@@ -14,6 +14,11 @@ def displayWelcomeMessage():
     iterations = 1
     animateAscii(infoText, iterations)
 
+def displayByeMessage():
+    byeText = "Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + "." + " Goodbye!"
+    iterations = 1
+    animateAscii(byeText, iterations)
+
 # Defines the transfer from text into a chosen ASCII font into ASCII Art from pyfiglet
 def textToAscii(text, font):
     asciiArt = pyfiglet.figlet_format(text, font = font)
@@ -42,15 +47,16 @@ def main():
         userText = input('Enter or paste the text you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT)') + ": ")
         print()
 
+        # If user does not enter any text into the prompt, alert the user and keep displaying alert message until they enter valid input
         if not userText:
             print('You didn\'t provide any text!')
             print()
             continue
         
-        # Allows user to quit out of the program. If user quits, Thank You message displays and exits the program
+        # Allows user to quit out of the program. If user quits, animated Bye message displays and exits the program
         if userText == 'QUIT':
-            print("Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
-            print()
+            displayByeMessage()
+            print('\n')
             sys.exit()
         
         # If currentFont is active and while that is true, the program gives user the option to use the same font or not
