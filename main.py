@@ -1,6 +1,6 @@
 import pyfiglet, sys, random, os, time
 
-# Defines how animateAscii writes the infoText characters 1 by 1 in .0125s intervals giving the impression the program is typing to the user
+# Defines how animateAscii writes the infoText characters 1 by 1 in .025s intervals giving the impression the program is typing to the user
 def animateAscii(infoText, iterations):
     for _ in range(iterations):
         for char in infoText:
