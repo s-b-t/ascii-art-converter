@@ -1,5 +1,6 @@
 import pyfiglet, sys, random, os, time
 
+# Defines how animateAscii writes the infoText characters 1 by 1 in .0125s intervals giving the impression the program is typing to the user
 def animateAscii(infoText, iterations):
     for _ in range(iterations):
         for char in infoText:
@@ -7,6 +8,7 @@ def animateAscii(infoText, iterations):
             sys.stdout.flush()
             time.sleep(0.0125)
 
+# Function to display the content of the infoText as well as animate the infoText in 1 iteration when user runs the program
 def displayWelcomeMessage():
     infoText = "\nWelcome to the " + boldText('B33FWare ASCII Text2Art Converter') + "." + "\nAuthor: Steven Blake Tobias\n" + boldText("PSSST! ") + "This program runs best on full screen.\n" + "More info at " + boldText('www.github.com/s-b-t\n\n')
     iterations = 1
