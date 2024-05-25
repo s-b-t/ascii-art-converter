@@ -14,7 +14,7 @@ def displayWelcomeMessage():
     iterations = 1
     animateAscii(infoText, iterations)
 
-# Defines the transfer from text into a chosen font ASCII font into ASCII Art from pyfiglet
+# Defines the transfer from text into a chosen ASCII font into ASCII Art from pyfiglet
 def textToAscii(text, font):
     asciiArt = pyfiglet.figlet_format(text, font = font)
     return asciiArt
