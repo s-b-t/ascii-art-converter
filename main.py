@@ -6,7 +6,7 @@ def animateAscii(infoText, iterations):
         for char in infoText:
             sys.stdout.write(char)
             sys.stdout.flush()
-            time.sleep(0.0125)
+            time.sleep(0.025)
 
 # Function to display the content of the infoText as well as animate the infoText in 1 iteration when user runs the program
 def displayWelcomeMessage():
