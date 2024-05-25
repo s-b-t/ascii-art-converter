@@ -1,4 +1,16 @@
-import pyfiglet, sys, random, os
+import pyfiglet, sys, random, os, time
+
+def animateAscii(infoText, iterations):
+    for _ in range(iterations):
+        for char in infoText:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.0125)
+
+def displayWelcomeMessage():
+    infoText = "\nWelcome to the " + boldText('B33FWare ASCII Text2Art Converter') + "." + "\nAuthor: Steven Blake Tobias\n" + boldText("PSSST! ") + "This program runs best on full screen.\n" + "More info at " + boldText('www.github.com/s-b-t\n\n')
+    iterations = 1
+    animateAscii(infoText, iterations)
 
 def textToAscii(text, font):
     asciiArt = pyfiglet.figlet_format(text, font = font)
@@ -16,17 +28,8 @@ def main():
     # Defines the predetermined list of fonts
     handPickedFonts = ["block", "banner", "starwars", "slant", "doh", "bubble", "4max", "nancyj-improved", "c_ascii_", "ansi_regular", "cola", "f15_____", "georgia11", "amc_neko", "italics_", "relief", "nscript", "small_shadow", "flipped", "line_blocks", "cli8x8", "relief2", "js_bracket_letters", "colossal", "script", "gothic__", "ansi_shadow", "double", "clr8x10", "xbritebi", "univers", "isometric1", "red_phoenix", "amc_untitled", "cybermedium", "chunky", "broadway", "xsansb", "demo_m__", "js_cursive", "wavy", "ascii_new_roman", "italic", "small_slant", "fourtops", "pepper", "script__", "old_banner", "sub-zero", "xttyb", "binary", "crazy", "rectangles", "linux", "xbrite", "ttyb", "shadow", "bell", "calgphy2", "charact6", "smshadow", "banner3-d", "britei", "big_money-nw", "caligraphy", "glenyn", "thorned", "npn_____", "speed", "drpepper", "xsbookb", "threepoint", "doom", "fire_font-s", "patorjk's_cheese", "char2___", "banner4", "utopiabi", "heart_left", "pyramid", "mini", "dotmatrix", "3-d", "standard", "patorjk-hex", "sblood", "rammstein", "braced", "os2", "t__of_ap", "marquee", "fire_font-k", "filter", "modular", "jazmine", "peaks"]
     
-    # Greets user with header
-    print()
-    print("Welcome to the " + boldText('B33FWare ASCII Text2Art Converter') + ".")
-    print("Author: Steven Blake Tobias")
-    print(boldText("PSSST! ") + "This program runs best on full screen.")
-    print("More info at " + boldText('www.github.com/s-b-t'))
-    print()
-    
     # Allows user to continue with the program as intended
-    input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue...')
-    print()
+    input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue...\n')
     
     currentFont = None
     lastFontUsed = None
@@ -95,4 +98,5 @@ def main():
         lastFontUsed = fontToUse
 
 if __name__ == "__main__":
+    displayWelcomeMessage()
     main()
