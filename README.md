@@ -1,6 +1,6 @@
 ### B33FWare ASCII Text2Art Converter
 
-*Please Note: This program is in its BETA/WIP stage.*
+*This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
 ```pyfiglet``` is used to pull in the different styles of fonts.
 
