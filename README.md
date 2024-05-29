@@ -12,7 +12,9 @@ I hand-picked the coolest and most legible fonts from ```pyfiglet``` as there ar
 
 To get started, navigate to ```ascii-art-converter``` in your terminal (assuming you've already imported the code and named your folder ```ascii-art-converter```).
 
-Once you're there, type and enter the following command:
+Type the following command to install pyfiglet to ```ascii-art-converter```: ```pip install pyfiglet```
+
+Once you've verified ```pyfiglet``` was fully installed, type and enter the following command:
   
   Windows: ```python main.py```
   
