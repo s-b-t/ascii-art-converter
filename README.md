@@ -1,4 +1,4 @@
-### Welcome to the B33FWare ASCII Text2Art Converter!
+### B33FWare ASCII Text2Art Converter
 
 *Please Note: This program is in its BETA/WIP stage.*
 
