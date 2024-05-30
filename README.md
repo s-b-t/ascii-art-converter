@@ -1,4 +1,4 @@
-### B33FWare ASCII Text2Art Converter
+<h1 align="center">B33FWare ASCII Text2Art Converter</h1>
 ![B33FWare2](https://github.com/s-b-t/ascii-art-converter/assets/109566542/6106cd7d-55b2-4960-964b-d7ee80ece667)
 
 
