@@ -1,8 +1,5 @@
 <h1 align="center">B33FWare Text2ASCII Converter</h1>
 
-![B33FWare2](https://github.com/s-b-t/ascii-art-converter/assets/109566542/6106cd7d-55b2-4960-964b-d7ee80ece667)
-
-
 *This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
 ```pyfiglet``` is used to pull in the different styles of fonts.
